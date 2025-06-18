@@ -1,0 +1,239 @@
+/*fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Coiny&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff3e1;
+    font-family: 'Poppins';
+    color: #3b2314;
+}
+
+/* ---------- HEADER --------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+}
+
+.nav-left, .nav-right {
+    padding: 0 120px;
+    display: flex;
+    gap: 106px;
+}
+
+header a {
+    text-decoration: none;
+    font-family: 'Chewy';
+    color: #64382B;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 15 px;
+}
+
+.logo img {
+    height: 137px;
+}
+
+/* ---------- HERO HOME --------- */
+.hero {
+
+    padding: 40px 120px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.hero h1 {
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 120px;
+    color: #ff6ec7;
+    font-family: 'Coiny';
+    font-size: 300px;
+    line-height: 1;
+    letter-spacing: 5px;
+    line-height: 0.3;
+}
+
+.hero h2 {
+    font-size: 60px;
+    color: #6b3f1d;
+    font-family: 'Coiny';
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 125px;
+    line-height: 1;
+
+}
+
+.hero p {
+    color: #fff;
+    text-shadow: 1px 1px 2px #6b3f1d;
+    font-family: 'Chewy';
+    font-size: 95px;
+    margin-left: 40px;
+    line-height: 0.5;
+    margin-bottom: 60px;
+}
+
+.hero button {
+    font-size: 36px;
+    font-family: 'Chewy', sans-serif;
+    position: 120px;
+    padding: 10px 30px;
+    background-color: #ff6ec7;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left: 22%;
+
+}
+
+.donuts img {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    transform: translate(-10%);
+    width: 580px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ---------- ABOUT --------- */
+
+.about-page {
+    font-family: 'Poppins', sans-serif;
+    color: #64382B;
+}
+
+.about-page .about {
+    max-width: 1000px;
+    margin: 0 auto;;
+}
+
+.about-page h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-family: 'Coiny', sans-serif;
+    color: #7B4F38;
+}
+
+.about-page h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.about-page strong {
+    font-weight: 700;
+}
+
+.about-page .dicarlo-kid {
+    width: 100%;
+    max-width: 400px;
+    float: right;
+    margin: 20px 0 20px 40px;
+    transform: rotate(2deg);
+}
+
+.about-page article {
+    clear: both;
+    margin-top: 40px;
+}
+
+.about-page .dicarlo-family {
+    width: 100%;
+    max-width: 500px;
+    float: left;
+    margin: 30px 40px 20px 0;
+    transform: rotate(-2deg);
+}
+
+.about-pagep:last-child {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* ---------- FOOTER --------- */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1 fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.all-rights {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: px;
+    padding-left: 120px;
+
+}
+
+.footer-logo {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 120px;
+}
+
+.final-message-footer {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: #4c2b1e;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 10px;
+    padding-bottom: 25px;
+}
+
+.footer-logo img {
+    height: 65px;
+}
+
+.social a img {
+    height: 40px;
+    margin: 0 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
