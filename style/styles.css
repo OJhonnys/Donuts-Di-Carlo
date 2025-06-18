@@ -113,65 +113,185 @@ header a {
 /* ---------- ABOUT --------- */
 
 .about-page {
+    padding: 60px 200px;
     font-family: 'Poppins', sans-serif;
     color: #64382B;
+    line-height: 1.7;
 }
 
-.about-page .about {
-    max-width: 1000px;
-    margin: 0 auto;;
+.about-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
-.about-page h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
-    font-family: 'Coiny', sans-serif;
+.about-block .text {
+    flex: 1 1 50%;
+    min-width: 300px;
+    border: 1px dashed red;
+}
+
+.about-block .image {
+    flex: 1 1;
+    display: flex;
+    min-width: 400px;
+    border: 1px dashed blue;
+}
+
+.about-block h1 {
+    font-size: 32px;
+    font-family: 'Chewy';
     color: #7B4F38;
+    margin-bottom: 10px;
 }
 
-.about-page h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
+.about-block h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 14px;
 }
 
-.about-page p {
+.about-block p {
     font-size: 16px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
-.about-page strong {
+.about-block strong {
     font-weight: 700;
 }
 
-.about-page .dicarlo-kid {
+.photo {
     width: 100%;
     max-width: 400px;
-    float: right;
-    margin: 20px 0 20px 40px;
-    transform: rotate(2deg);
 }
 
-.about-page article {
-    clear: both;
-    margin-top: 40px;
+.tilt-right {
+    transform: rotate(3deg);
 }
 
-.about-page .dicarlo-family {
-    width: 100%;
-    max-width: 500px;
-    float: left;
-    margin: 30px 40px 20px 0;
-    transform: rotate(-2deg);
+.tilt-left {
+    transform: rotate(-3deg);
 }
 
-.about-pagep:last-child {
-    margin-top: 40px;
-    font-size: 18px;
-    font-weight: bold;
+.about-end {
     text-align: center;
+    margin-top: 10px;
 }
 
+.about-end p {
+    margin-bottom: 16px;
+    font-size: 17px;
+}
 
+/* ---------- CONTACT --------- */
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/*left side*/
+.contact {
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.contact-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    font-family: 'Coiny';
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #7B4F38;
+}
+
+.contact-info h2 {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    color: #7B4F38;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 0.95;
+}
+
+.detail img {
+    width: 30px;
+    height: 30px;
+}
+
+/*right side form*/
+
+.contact-form {
+    flex: 1;
+    background-color: #ff6ec7;
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+form button {
+  background-color: #5c3b1e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #3e2814;
+}
 
 /* ---------- FOOTER --------- */
 
