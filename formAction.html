@@ -23,15 +23,20 @@
     </header>
     <main>
         <section class="form-result">
-            <h1>Thank you for your Message!</h1>
+            <img src="/img/donut-eat.png" alt="Eaten donut" class="donut-eaten">
+            <h1>Thank You for Getting in Touch!</h1>
+            <h2>We’ve received your message.</h2>
+            <p>Have you had a donut today? <br>Be happy, eat a donut!</p>
             <ul id="formData"></ul>
         </section>
 
         <script>
             const urlParams = new URLSearchParams(window.location.search);
             const list = document.getElementById('formData');
-            urlParams.forEach((Value, key) => {
+
+            urlParams.forEach((value, key) => {
                 const li = document.createElement('li');
+                li.textContent = `${key}: ${value}`;
                 list.appendChild(li);
             });
         </script>

@@ -2,7 +2,7 @@ const donuts = [
     {name: "chocolate", price: 5, img: "/img/donut-choco.png"},
     {name: "glazed", price: 5, img: "/img/donut-glazed.png"},
     {name: "vanilla", price: 5, img: "/img/donut-vanilla.png"},    
-    {name: "cinnamon", price: 5, img: "/img/donut-cinnamon.png"},
+    {name: "nuttela", price: 5, img: "/img/donut-nutella.png"},
     {name: "boston", price: 5, img: "/img/donut-boston.png"},
     {name: "strawberry", price: 5, img: "/img/donut-strawberry.png"},    
     {name: "blueberry", price: 5, img: "/img/donut-blueberry.png"},

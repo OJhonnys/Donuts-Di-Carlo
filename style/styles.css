@@ -21,11 +21,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 120px;
+    padding: 20px 280px;
+    margin-bottom: 40px;
 }
 
 .nav-left, .nav-right {
-    padding: 0 120px;
+    max-width: 311.14px;
     display: flex;
     gap: 106px;
 }
@@ -48,12 +49,14 @@ header a {
 
     padding: 40px 120px;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .hero h1 {
     position: relative;
-    text-align: center;
+    text-align: left;
     margin-top: 60px;
     font-size: 120px;
     color: #ff6ec7;
@@ -68,7 +71,7 @@ header a {
     font-size: 60px;
     color: #6b3f1d;
     font-family: 'Coiny';
-    margin-left: 20px;
+    text-align: left;
     margin-top: 40px;
     font-size: 125px;
     line-height: 1;
@@ -97,7 +100,11 @@ header a {
     border-radius: 12px;
     cursor: pointer;
     margin-left: 22%;
+    transition: transform 0.3s ease;
+}
 
+.hero button:hover {
+    transform: scale(1.1);
 }
 
 .donuts img {
@@ -108,6 +115,149 @@ header a {
     width: 580px;
     pointer-events: none;
     z-index: 1;
+}
+
+/* ---------- MENU --------- */
+
+/*banner*/
+
+.popular-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6ec7;
+    padding: 66px;
+    border-radius: 80px;
+    margin-bottom: 40px;
+    margin-left: 211.667px;
+    margin-right: 211.667px;
+    max-width: 1400px;
+    overflow: visible;
+    position: relative;
+}
+
+.popular-banner .text {
+    z-index: 1;
+    max-width: 400px;
+    color: white;
+}
+
+.popular-banner h2 {
+    font-size: 180px;
+    font-weight: 900;
+    color: #fff;
+    font-family: 'Coiny', sans-serif;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.popular-banner h2 span {
+    font-size: 140px;
+    color: #5c3b1e;
+}
+
+.order-btn {
+    float: right;
+    margin-top: 30px;
+    background-color: #fff;
+    color: #ff6ec7;
+    font-family: 'Chewy', sans-serif;
+    border: none;
+    border-radius: 40px;
+    padding:  20px 60px;
+    font-size: 48px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.order-btn:hover {
+    transform: scale(1.09);
+}
+
+.popular-banner img {
+    position: absolute;
+    right: -100px;
+    bottom: -30px;
+    max-width: 650px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/*donuts section*/
+
+.donuts-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/*donuts section title*/
+
+.donuts-section h2 {
+    font-size: 42px;
+    font-weight: 400;
+    color: #ff6ec7;
+    font-family: 'Chewy', sans-serif;
+    text-transform: lowercase;
+    margin-bottom: 30px;
+}
+
+/*donuts grid*/
+
+.donuts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+/*cards*/
+
+.donut-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.donuts-grid .donut-card:hover {
+    transform: translateY(-10px);
+}
+
+.donut-card img {
+    height: 197px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.donut-card h3 {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #4A2C1A;
+    font-weight: 700;
+    margin: 0;
+}
+
+.donut-card p {
+    font-size: 0.9rem;
+    color: #4A2C1A;
+    font-family: 'Poppins', sans-serif;
+}
+
+.donut-card .price {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: #f766b3;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 /* ---------- ABOUT --------- */
@@ -129,17 +279,29 @@ header a {
     flex-wrap: wrap;
 }
 
-.about-block .text {
+.about-block .text-1 {
     flex: 1 1 50%;
     min-width: 300px;
-    border: 1px dashed red;
 }
 
-.about-block .image {
+.text-2 {
+    flex: 1 1 50%;
+    text-align: right;
+    min-width: 300px;
+    margin-top: 30px;
+}
+
+.about-block .image-1 {
     flex: 1 1;
     display: flex;
-    min-width: 400px;
-    border: 1px dashed blue;
+    min-width: 500px;
+}
+
+.image-2 {
+    flex: 1 1;
+    display: flex;
+    min-width: 550px;
+    transform: translateY(-130px);
 }
 
 .about-block h1 {
@@ -150,13 +312,13 @@ header a {
 }
 
 .about-block h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 14px;
 }
 
 .about-block p {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 16px;
 }
 
@@ -166,7 +328,7 @@ header a {
 
 .photo {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .tilt-right {
@@ -179,7 +341,7 @@ header a {
 
 .about-end {
     text-align: center;
-    margin-top: 10px;
+    margin-top: -80px;
 }
 
 .about-end p {
@@ -206,6 +368,7 @@ header a {
 .contact-info {
     flex: 1;
     max-width: 600px;
+    margin-top: 40px;
 }
 
 .contact-info h1 {
@@ -229,7 +392,7 @@ header a {
 }
 
 .contact-details {
-    margin-top: 30px;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px
@@ -290,7 +453,58 @@ form button {
 }
 
 form button:hover {
-  background-color: #3e2814;
+  background-color: #fff;
+  color: #ff6ec7;
+}
+
+/* ---------- CONTACT FORM ACTION--------- */
+
+.form-result {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donut-eaten {
+    max-width: 500px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.form-result h1 {
+    font-family: 'Coiny', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: #7B4F38;
+}
+
+.form-result h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #64382B;
+}
+
+.form-result p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #64382B;
+    margin-bottom: 60px;
+}
+
+#formData {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #64382B;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ---------- FOOTER --------- */
@@ -356,4 +570,11 @@ footer {
     margin: 0 20px;
     justify-content: space-between;
     gap: 20px;
+}
+.social a img {
+  transition: transform 0.2s ease;
+}
+
+.social a img:hover {
+    transform: translateY(-10px);
 }
