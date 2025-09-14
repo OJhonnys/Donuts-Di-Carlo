@@ -8,39 +8,35 @@
     <link rel="stylesheet" href="/style/styles.css" />
 </head>
 <body>
+    <!-- Website header section with navigation and logo -->
     <header>
+        <!-- Left side navigation links -->
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
         </div>
+        <!-- Logo in the center -->
         <div class="logo">
             <img src="/img/logo.png" alt="Donuts di Carlo Logo">
         </div>
+        <!-- Right side navigation links -->
         <div class="nav-right">
             <a href="about.html">About</a>
             <a href="form.html">Contact</a>
         </div>
     </header>
+    <!-- Main content of the homepage -->
     <main>
         <section class="form-result">
             <img src="/img/donut-eat.png" alt="Eaten donut" class="donut-eaten">
             <h1>Thank You for Getting in Touch!</h1>
             <h2>We’ve received your message.</h2>
             <p>Have you had a donut today? <br>Be happy, eat a donut!</p>
+            <!-- This list will show the form data sent through URL -->
             <ul id="formData"></ul>
         </section>
-
-        <script>
-            const urlParams = new URLSearchParams(window.location.search);
-            const list = document.getElementById('formData');
-
-            urlParams.forEach((value, key) => {
-                const li = document.createElement('li');
-                li.textContent = `${key}: ${value}`;
-                list.appendChild(li);
-            });
-        </script>
     </main>
+    <!-- Website footer with logo, text and social media links -->
     <footer class="container">
         <div class="all-rights">
         <p>© 2025 Donuts di Carlo. All rights reserved.</p>

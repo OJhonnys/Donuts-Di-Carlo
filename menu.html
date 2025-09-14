@@ -8,27 +8,34 @@
     <link rel="stylesheet" href="/style/styles.css" />
 </head>
 <body>
+    <!-- Website header section with navigation and logo -->
     <header>
+        <!-- Left side navigation links -->
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
         </div>
+        <!-- Logo in the center -->
         <div class="logo">
             <img src="/img/logo.png" alt="Donuts di Carlo Logo">
         </div>
+        <!-- Right side navigation links -->
         <div class="nav-right">
             <a href="about.html">About</a>
             <a href="form.html">Contact</a>
         </div>
     </header>
+    <!-- Main content of the homepage -->
     <main>
+        <!-- Banner section highlighting popular donuts -->
         <section class="popular-banner">
             <div class="text">
                 <h2>POPULAR <span>DONUTS</span></h2>
-                <button class="order-btn">Order Now</button>
+                <button class="order-btn" onclick="window.location.href='https://deliveroo.co.uk/'">Order Now</button>
             </div>
             <img src="img/donut-banner.png" alt="Donut Popular Donuts">
         </section>
+        <!-- Section that will show a list of donuts -->
         <section class="donuts-section">
             <h2>donuts</h2>
             <div id="donutsContainer" class="donuts-grid">
@@ -37,6 +44,7 @@
 
         </section>
     </main>
+        <!-- Website footer with logo, text and social media links -->
     <footer class="container">
         <div class="all-rights">
         <p>© 2025 Donuts di Carlo. All rights reserved.</p>

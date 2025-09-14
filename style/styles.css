@@ -25,12 +25,15 @@ header {
     margin-bottom: 40px;
 }
 
+
+/* Left and right navigation container styles */
 .nav-left, .nav-right {
     max-width: 311.14px;
     display: flex;
     gap: 106px;
 }
 
+/* Links inside header */
 header a {
     text-decoration: none;
     font-family: 'Chewy';
@@ -109,8 +112,8 @@ header a {
 
 .donuts img {
     position: absolute;
-    top: 20%;
-    left: 55%;
+    top: 25%;
+    left: 57%;
     transform: translate(-10%);
     width: 580px;
     pointer-events: none;
@@ -176,8 +179,8 @@ header a {
 
 .popular-banner img {
     position: absolute;
-    right: -100px;
-    bottom: -30px;
+    top: 30%;
+    left: 57%;
     max-width: 650px;
     z-index: 10;
     pointer-events: none;
